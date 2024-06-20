@@ -1,0 +1,9 @@
+#which endpoints are deployed, choreo will deploy the endpoints in the order they are listed
+version: 0.1
+
+endpoints:
+  - name: "REST API" #basic choreo endpoint configuration
+    port: 8000 #port of django api
+    type: REST #  
+    networkVisibility: Public #anyone can access the endpoint
+    context: / #base path we want to expose
